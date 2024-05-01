@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicados Fotografia</title>
+    <!-- Link para o CSS do Elementor -->
+    <link href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css" rel="stylesheet">
+    <!-- Link para o JavaScript do Elementor -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <!-- Configuração do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyC7toD38YwZ0v-R1M_dAS3lCFRUtAxCiiM",
+        authDomain: "clicados-fotografia.firebaseapp.com",
+        projectId: "clicados-fotografia",
+        storageBucket: "clicados-fotografia.appspot.com",
+        messagingSenderId: "831544646507",
+        appId: "1:831544646507:web:1bb2d65d5e43e33027ca2e",
+        measurementId: "G-KPJC9L5RHM"
+      };
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to Clicados Fotografia</h1>
+        <p>Your go-to place for stunning photography</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img src="image1.jpg" alt="Image 1"></li>
+                    <li class="glide__slide"><img src="image2.jpg" alt="Image 2"></li>
+                    <li class="glide__slide"><img src="image3.jpg" alt="Image 3"></li>
+                    <!-- Adicione mais imagens conforme necessário -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate photographers dedicated to capturing the essence of every moment.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Reach out to us at: contact@clicadosfotografia.com</p>
+    </section>
+
+    <!-- Configuração do Elementor Glide -->
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            perView: 3,
+            focusAt: 'center',
+            gap: 30
+        }).mount();
+    </script>
+</body>
+</html>
