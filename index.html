@@ -1,84 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clicados Fotografia</title>
-    <!-- Link para o CSS do Elementor -->
-    <link href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css" rel="stylesheet">
-    <!-- Link para o JavaScript do Elementor -->
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <!-- Configuração do Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js"></script>
-    <script>
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyC7toD38YwZ0v-R1M_dAS3lCFRUtAxCiiM",
-        authDomain: "clicados-fotografia.firebaseapp.com",
-        projectId: "clicados-fotografia",
-        storageBucket: "clicados-fotografia.appspot.com",
-        messagingSenderId: "831544646507",
-        appId: "1:831544646507:web:1bb2d65d5e43e33027ca2e",
-        measurementId: "G-KPJC9L5RHM"
-      };
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
+    <title>Clicados no Kart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        .header {
+            background-color: red;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .description {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+        .portfolio {
+            background-color: yellow;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .portfolio h2 {
+            color: black;
+        }
+        .contact {
+            background-color: red;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .contact h2 {
+            color: white;
+        }
+        .contact p {
+            margin: 10px 0;
+        }
+        nav {
+            background-color: yellow;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        footer {
+            background-color: yellow;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navbar -->
+    <div class="header">
+        <h1>Clicados no Kart</h1>
+    </div>
+
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contact">Contato</a>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h1>Welcome to Clicados Fotografia</h1>
-        <p>Your go-to place for stunning photography</p>
-    </section>
+    <div class="description" id="home">
+        <p>Bem-vindo ao "Clicados no Kart", onde capturamos os momentos emocionantes e cheios de adrenalina do mundo do kart amador! Nossa paixão pela fotografia se une à energia contagiante das pistas de kart para trazer até você imagens vibrantes e cheias de ação.</p>
+        <p>Explore nossa galeria para reviver cada curva, ultrapassagem e sorriso de vitória. Do iniciante ao experiente, nossas fotos capturam a emoção única que só o kartismo pode oferecer. Com imagens em alta definição, você sentirá como se estivesse lá na pista, acelerando rumo à linha de chegada.</p>
+        <p>Junte-se a nós nesta jornada fotográfica pelo mundo do kart amador. Prepare-se para sentir a velocidade, a competição e a emoção, tudo isso através das lentes do "Clicados no Kart".</p>
+    </div>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2>Our Portfolio</h2>
-        <div class="glide">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                    <li class="glide__slide"><img src="image1.jpg" alt="Image 1"></li>
-                    <li class="glide__slide"><img src="image2.jpg" alt="Image 2"></li>
-                    <li class="glide__slide"><img src="image3.jpg" alt="Image 3"></li>
-                    <!-- Adicione mais imagens conforme necessário -->
-                </ul>
-            </div>
+    <div class="portfolio" id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="gallery">
+            <img src="https://drive.google.com/uc?id=145Pq9CEoOPNF1UCOic-QxKiZHFysDJ6V" alt="Foto de Kart Amador 1">
+            <img src="https://drive.google.com/uc?id=1Wjv8j5AVQs9YB-nM_WtDcJj9mRXlKXKY" alt="Foto de Kart Amador 2">
+            <img src="https://drive.google.com/uc?id=1b5cFl8pzuo7G7LJBwcA8b0QO5OMGK1g_" alt="Foto de Kart Amador 3">
         </div>
-    </section>
+    </div>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are passionate photographers dedicated to capturing the essence of every moment.</p>
-    </section>
+    <div class="contact" id="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações:</p>
+        <p>Email: seuemail@example.com</p>
+        <p>Telefone: (11) 1234-5678</p>
+    </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Reach out to us at: contact@clicadosfotografia.com</p>
-    </section>
-
-    <!-- Configuração do Elementor Glide -->
-    <script>
-        new Glide('.glide', {
-            type: 'carousel',
-            perView: 3,
-            focusAt: 'center',
-            gap: 30
-        }).mount();
-    </script>
+    <footer>
+        <p>&copy; 2024 Clicados no Kart</p>
+    </footer>
 </body>
 </html>
